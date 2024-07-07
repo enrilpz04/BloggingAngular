@@ -1,0 +1,60 @@
+.flex {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 40px 30px 40px;
+    gap: 50px;
+}
+
+aside {
+    width: 60%;
+}
+
+section {
+    width: 40%;
+}
+
+figure img {
+    width: 100%;
+}
+
+.formulario {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 80%;
+    padding: 10px 20px 20px 20px;
+}
+
+.formulario h2 {
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    width: 90%;
+    padding: 10px;
+}
+
+.formulario button {
+    padding: 10px 30px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.btn-save {
+    background-color: lightblue;
+}
+
+.btn-remove {
+    background-color: khaki;
+}
+
+.lista-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}

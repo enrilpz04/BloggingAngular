@@ -1,1 +1,36 @@
-<p>blog works!</p>
+<div class="flex">
+    <aside>
+        <div class="formulario">
+            <h2>Publicar Noticia</h2>
+            <div>
+                <label for="title">Título de la noticia</label>
+                <input id="title" type="text" placeholder="Introduce el título de la noticia" [(ngModel)]="newPost.title">
+            </div>
+
+            <div>
+                <label for="content">Contenido de la noticia</label>
+                <textarea id="cotnent" [(ngModel)]="newPost.content"></textarea>
+            </div>
+
+            <div>
+                <label for="url">Imagen de la noticia</label>
+                <input id="url" type="url" placeholder="Introduce el enlace de la imagen" [(ngModel)]="newPost.imageURL">
+            </div>
+
+            <div>
+                <label for="date">Contenido de la noticia</label>
+                <input id="date" type="date" placeholder="Introduce la fecha de la noticia" [(ngModel)]="newPost.date">
+            </div>
+        
+            <button class="btn-save" (click)="getData()">Guardar</button>
+            <button class="btn-remove" (click)="removeData()">Limpiar</button>
+        </div>
+    </aside>
+    <section>
+        <h2>Se han encontrado {{arrPosts.length}} noticias.</h2>
+        <hr><br>
+        <div class="lista-posts" [innerHTML]="cargarPosts()">
+
+        </div>
+    </section>
+  </div>

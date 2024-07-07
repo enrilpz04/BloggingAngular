@@ -1,0 +1,16 @@
+.flex {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    text-align: center;
+    padding: 10px 20px 5px 20px;
+    background-color: lightblue;
+}
+
+figure img {
+    width: 60px;
+}
+
+h1 {
+    padding-top: 5px;
+}
